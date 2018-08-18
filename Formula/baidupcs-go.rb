@@ -6,7 +6,6 @@ class BaidupcsGo < Formula
     sha256 "d13dcca9c7b7705340ab8820a2a5c3350523f9dd39c64d1cfcdf96932ecf5987"
 
     def install
-        system "unzip", "-q", "baidupcs-go-3.5.4.zip"
-        bin.install "BaiduPCS-Go-v3.5.4-darwin-osx-amd64/BaiduPCS-Go"
+        bin.install "BaiduPCS-Go"
     end
 end
