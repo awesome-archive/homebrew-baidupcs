@@ -3,9 +3,10 @@ class BaidupcsGo < Formula
     homepage "https://github.com/iikira/BaiduPCS-Go"
     url "https://github.com/iikira/BaiduPCS-Go/releases/download/v3.5.4/BaiduPCS-Go-v3.5.4-darwin-osx-amd64.zip"
     version "3.5.4"
-    sha256 "bfba3816520425236974ab36d5a552fc174793dc15e0d7fa0c8bbdd13a916a91"
+    sha256 "d13dcca9c7b7705340ab8820a2a5c3350523f9dd39c64d1cfcdf96932ecf5987"
 
     def install
-        bin.install "baidupcs-go"
+        system "unzip", "-q", "BaiduPCS-Go-v3.5.4-darwin-osx-amd64.zip"
+        bin.install "BaiduPCS-Go-v3.5.4-darwin-osx-amd64/BaiduPCS-Go"
     end
 end
